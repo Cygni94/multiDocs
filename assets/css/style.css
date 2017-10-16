@@ -1,0 +1,28 @@
+body {
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: "header header header header header" "sidebar content content content content";
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.header {
+    grid-area: header;
+}
+
+.header-title {
+    border-bottom: 1px solid black;
+    grid-column: 1 / 2;
+}
+
+.box {
+    margin: 5px;
+    padding: 20px;
+}
