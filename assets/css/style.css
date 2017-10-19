@@ -2,7 +2,7 @@ body {
     margin: 0.5rem;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-areas: "header header header header header" "sidebar content content content content";
+    grid-template-areas: "header header header header header" "content content content content sidebar";
 }
 
 .sidebar {
@@ -15,14 +15,27 @@ body {
 
 .header {
     grid-area: header;
+    display: subgrid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "title title title title btn" ". . menu menu menu";
 }
 
 .header-title {
+grid-area: title;
     border-bottom: 1px solid black;
-    grid-column: 1 / 2;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
 }
 
-.box {
-    margin: 5px;
-    padding: 20px;
+.header-btn {
+    grid-area: btn;
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.header-menu {
+    grid-area: menu;
+    grid-column: 1 / 5;
+    grid-row: 2;
 }
