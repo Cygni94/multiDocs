@@ -22,6 +22,7 @@ input {
 	display: grid;
 	grid-template-columns: repeat(10, [col] 10%);
 	grid-template-rows: repeat(3, [row] auto);
+	border: 1px solid black;
 }
 
 .header-title {
@@ -39,7 +40,7 @@ input {
 	grid-row: 1;
 	margin: auto;
 	padding: 0.5rem;
-	border: 1px solid green;
+	border: 1px solid black;
 	border-radius: 0.3rem;
 }
 
@@ -48,6 +49,7 @@ input {
 }
 
 .userInfo-dropdown {
+	padding: 0 0.3rem 0 0.5rem;
 	display: inline;
 }
 
@@ -80,7 +82,7 @@ hr {
 .main {
 	grid-column: col 1 / span 10;
 	grid-row: row 2;
-	background-color: pink;
+	border: 1px solid black;
 	height: 30rem;
 }
 
@@ -118,7 +120,7 @@ hr {
 .contatos {
 	grid-column: 1;
 	grid-row: 2;
-	background-color: yellowgreen;
+	border: 1px solid black;
 }
 
 .contatos-header {
@@ -131,6 +133,7 @@ hr {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 2.25rem;
 	margin: 0;
+	padding-left: 0.5rem;
 	grid-column: 1;
 	grid-row: 1;
 }
@@ -138,6 +141,9 @@ hr {
 .contatos-searchField {
 	grid-column: 2;
 	grid-row: 1;
+	padding-right: 0.5rem;
+	align-self: center;
+	justify-self: end;
 }
 
 .contatos-list {
@@ -147,5 +153,25 @@ hr {
 
 .calendario {
 	grid-row: 3;
-	background-color: yellow;
+	border: 1px solid black;
+}
+
+.contatos-list {
+	list-style: none;
+	padding: 0;
+}
+
+.contatos-list li {
+	padding-left: 1.3em;
+}
+
+.contatos-list li:before {
+	content: "\f2ba";
+	/* FontAwesome Unicode */
+	font-family: FontAwesome;
+	display: inline-block;
+	margin-left: -1.3em;
+	/* same as padding-left set on li */
+	width: 1.3em;
+	/* same as padding-left set on li */
 }
