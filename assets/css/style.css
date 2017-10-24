@@ -209,6 +209,7 @@ hr {
 	height: 3.5rem;
 	width: 20%;
 	text-align: center;
+	padding-right: 0.5rem;
 	border-style: solid;
 	border-width: 0.5px 0.5px 0 0;
 }
