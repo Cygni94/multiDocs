@@ -12,15 +12,12 @@ input {
 	border: 0;
 	border-top: 1px solid black;
 	margin: 0 0;
-	margin-left: 2rem;
-	margin-right: 4rem;
 	padding-left: 0;
 }
 
 .wrapper {
 	display: grid;
-	grid-gap: 5px;
-	grid-template-columns: repeat(12, [col] 8%);
+	grid-template-columns: repeat(12, [col] 8.33333333333%);
 	grid-template-rows: repeat(2, [row] auto);
 	background-color: #fff;
 	color: #444;
@@ -32,7 +29,6 @@ input {
 	display: grid;
 	grid-template-columns: repeat(10, [col] 10%);
 	grid-template-rows: repeat(3, [row] auto);
-	border: 1px solid black;
 }
 
 .header-title {
@@ -90,9 +86,8 @@ hr {
 }
 
 .main {
-	grid-column: col 1 / span 10;
+	grid-column: col 1 / span 9;
 	grid-row: row 2;
-	border: 1px solid black;
 	height: 30rem;
 }
 
@@ -119,7 +114,7 @@ hr {
 }
 
 .aside {
-	grid-column: col 11 / span 2;
+	grid-column: col 10 / span 3;
 	grid-row: row 2;
 	height: 30rem;
 	display: grid;
@@ -133,7 +128,6 @@ hr {
 .contatos {
 	grid-column: 1;
 	grid-row: 2;
-	border: 1px solid black;
 }
 
 .contatos-header {
@@ -169,7 +163,6 @@ hr {
 .calendario {
 	grid-column: 1;
 	grid-row: 2 / span 2;
-	border: 1px solid black;
 	position: relative;
 }
 
@@ -181,11 +174,11 @@ hr {
 
 .calendario-title {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 2rem;
 	margin: 0;
 	padding-left: 0.5rem;
 	grid-column: 1;
 	grid-row: 1;
+	font-size: 1.6rem;
 }
 
 .calendario-filter {
@@ -197,23 +190,36 @@ hr {
 }
 
 .calendario-body {
+	font-family: 'Gruppo', sans-serif;
+	font-size: 1.3rem;
+	border-spacing: 0;
 	margin: 0;
 	padding: 0;
 	width: 100%;
 }
 
 .calendario-data {
+	height: 3.5rem;
 	width: 20%;
-text-align: center;
+	text-align: center;
+	border-style: solid;
+	border-width: 0.5px 0.5px 0 0;
 }
 
 .calendario-tarefa {
 	padding-left: 0.5rem;
 	width: 80%;
+	border-style: solid;
+	border-width: 0.5px 0 0 0;
 }
 
 .calendario-depto {
+	font-size: 2rem;
+	border-style: solid;
+	border-width: 0.5px 0 0 0.5px;
 	width: 10%;
+	padding: 0 0.5rem 0 0.5rem;
+	margin: auto;
 }
 
 .calendario-footer {
