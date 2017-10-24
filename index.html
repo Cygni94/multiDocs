@@ -51,7 +51,7 @@
 
 	</main>
 	<aside class="aside">
-		<section class="contatos">
+		<!--		<section class="contatos">
 			<div class="contatos-header">
 				<div class="contatos-title">Contatos</div>
 				<div class="contatos-searchField">
@@ -66,13 +66,40 @@
 				<li>Cristiano
 					<br>ccoelho.me@gmail.com
 					<br>98587-7928</li>
-		</section>
+				</section> -->
 		<section class="calendario">
+			<div class="calendario-header">
+				<div class="calendario-title">Calendário</div>
+				<div class="calendario-filter">
+					<label for="contatos-searchInput">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</label>
+					<input type="text" name="filtro" id="calendario-filterInput" placeholder="">
+				</div>
+			</div>
+			<hr>
+
+			<table  class="calendario-body">
+				<tbody>
+					<td class="calendario-data">09
+						<br>OUT</td>
+					<td class="calendario-tarefa">Dapi</td>
+					<td class="calendario-depto">
+						<i class="fa fa-table" aria-hidden="true"></i>
+					</td>
+				</tbody>
+				<tfoot class="calendario-footer">
+					<td>.</td>
+				</tfoot>
+			</table>
 
 		</section>
 	</aside>
 
 	</div>
+
+	<script src="assets/js/script.js"></script>
+
 </body>
 
 </html>

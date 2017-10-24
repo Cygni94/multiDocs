@@ -7,10 +7,20 @@ input {
 	display: none;
 }
 
+.separator {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid black;
+	margin: 0 0;
+	margin-left: 2rem;
+	margin-right: 4rem;
+	padding-left: 0;
+}
+
 .wrapper {
 	display: grid;
 	grid-gap: 5px;
-	grid-template-columns: repeat(12, [col] auto);
+	grid-template-columns: repeat(12, [col] 8%);
 	grid-template-rows: repeat(2, [row] auto);
 	background-color: #fff;
 	color: #444;
@@ -117,6 +127,9 @@ hr {
 	grid-template-rows: 10% 45% 45%;
 }
 
+
+/*
+
 .contatos {
 	grid-column: 1;
 	grid-row: 2;
@@ -151,27 +164,62 @@ hr {
 	grid-row: 2;
 }
 
+*/
+
 .calendario {
-	grid-row: 3;
+	grid-column: 1;
+	grid-row: 2 / span 2;
 	border: 1px solid black;
+	position: relative;
 }
 
-.contatos-list {
-	list-style: none;
+.calendario-header {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: 50% 50%;
+}
+
+.calendario-title {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 2rem;
+	margin: 0;
+	padding-left: 0.5rem;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.calendario-filter {
+	grid-column: 2;
+	grid-row: 1;
+	padding-right: 0.5rem;
+	align-self: center;
+	justify-self: end;
+}
+
+.calendario-body {
+	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
-.contatos-list li {
-	padding-left: 1.3em;
+.calendario-data {
+	width: 20%;
+text-align: center;
 }
 
-.contatos-list li:before {
-	content: "\f2ba";
-	/* FontAwesome Unicode */
-	font-family: FontAwesome;
-	display: inline-block;
-	margin-left: -1.3em;
-	/* same as padding-left set on li */
-	width: 1.3em;
-	/* same as padding-left set on li */
+.calendario-tarefa {
+	padding-left: 0.5rem;
+	width: 80%;
+}
+
+.calendario-depto {
+	width: 10%;
+}
+
+.calendario-footer {
+	background-color: grey;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 }
