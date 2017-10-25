@@ -24,12 +24,12 @@
 		<hr>
 
 		<div class="header-menu">
-			<a class="header-menuItem" href="">Checklists</a>
-			<a class="header-menuItem" href="">Documentos</a>
-			<a class="header-menuItem" href="">Rotinas</a>
+			<a onclick="multiTabs(event, checklists)" class="header-menuItem" href="">Checklists</a>
+			<a onclick="multiTabs(event, documentos)" class="header-menuItem" href="">Documentos</a>
+			<a onclick="multiTabs(event, rotinas)" class="header-menuItem" href="">Rotinas</a>
 		</div>
 	</header>
-	<main class="main">
+	<main id="inicio" class="main">
 		<span class="main-title">Início</span>
 		<ul class="quickAccess-list">
 			<li class="quickAccess-item">
@@ -51,6 +51,31 @@
 		</ul>
 
 	</main>
+
+	<main id="documentos" class="main">
+		<span class="main-title">Documentos</span>
+		<ul class="quickAccess-list">
+			<li class="quickAccess-item">
+				<i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Novo Cliente</span>
+			</li>
+			<li class="quickAccess-item">
+				<i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Nova Tarefa</span>
+			</li>
+			<li class="quickAccess-item">
+				<i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Contrato de locação de imóvel residencial</span>
+			</li>
+			<li class="quickAccess-item">
+				<i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Checklist Depto. Pessoal 09/2017</span>
+			</li>
+		</ul>
+
+	</main>
+
+
 	<aside class="aside">
 		<!--		<section class="contatos">
 			<div class="contatos-header">
