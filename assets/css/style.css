@@ -98,6 +98,12 @@ hr {
 	height: 30rem;
 }
 
+.tab {
+	grid-column: col 1 / span 7;
+	grid-row: row 2;
+	height: 30rem;
+}
+
 .main-title {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 3.5rem;

@@ -24,9 +24,15 @@
 		<hr>
 
 		<div class="header-menu">
-			<a onclick="multiTabs(event, checklists)" class="header-menuItem" href="">Checklists</a>
-			<a onclick="multiTabs(event, documentos)" class="header-menuItem" href="">Documentos</a>
-			<a onclick="multiTabs(event, rotinas)" class="header-menuItem" href="">Rotinas</a>
+			<btn onclick="multiTabs(event, 'checklists')" class="header-menuItem">
+				<a id="myAnchor" href="">Checklists</a>
+			</btn>
+			<btn onclick="multiTabs(event, 'documentos')" class="header-menuItem">
+				<a href="">Documentos</a>
+			</btn>
+			<btn onclick="multiTabs(event, 'rotinas')" class="header-menuItem">
+				<a href="">Rotinas</a>
+			</btn>
 		</div>
 	</header>
 	<main id="inicio" class="main">
@@ -52,7 +58,7 @@
 
 	</main>
 
-	<main id="documentos" class="main">
+	<main id="documentos" class="tab">
 		<span class="main-title">Documentos</span>
 		<ul class="quickAccess-list">
 			<li class="quickAccess-item">
@@ -103,43 +109,43 @@
 					<input type="text" name="filtro" id="calendario-filterInput" placeholder="">
 				</div>
 			</div>
-<!--			<hr class="separator"> -->
+			<!--			<hr class="separator"> -->
 
-			<table  class="calendario-body">
+			<table class="calendario-body">
 				<tbody>
 					<tr>
-					<td class="calendario-data">09
-						<br>OUT</td>
-					<td class="calendario-tarefa">Dapi</td>
-					<td class="calendario-depto">
-						<i class="fa fa-table" aria-hidden="true"></i>
-					</td>
-				</tr>
-				<tr>
-					<td class="calendario-data">09
-						<br>OUT</td>
-					<td class="calendario-tarefa">Dapi</td>
-					<td class="calendario-depto">
-						<i class="fa fa-table" aria-hidden="true"></i>
-					</td>
-				</tr>
-				<tr>
-					<td class="calendario-data">09
-						<br>OUT</td>
-					<td class="calendario-tarefa">Dapi</td>
-					<td class="calendario-depto">
-						<i class="fa fa-table" aria-hidden="true"></i>
-					</td>
-				</tr>
-				<tr>
-					<td class="calendario-data">09
-						<br>OUT</td>
-					<td class="calendario-tarefa">Dapi</td>
-					<td class="calendario-depto">
-						<i class="fa fa-table" aria-hidden="true"></i>
-					</td>
-				</tr>
-								</tbody>
+						<td class="calendario-data">09
+							<br>OUT</td>
+						<td class="calendario-tarefa">Dapi</td>
+						<td class="calendario-depto">
+							<i class="fa fa-table" aria-hidden="true"></i>
+						</td>
+					</tr>
+					<tr>
+						<td class="calendario-data">09
+							<br>OUT</td>
+						<td class="calendario-tarefa">Dapi</td>
+						<td class="calendario-depto">
+							<i class="fa fa-table" aria-hidden="true"></i>
+						</td>
+					</tr>
+					<tr>
+						<td class="calendario-data">09
+							<br>OUT</td>
+						<td class="calendario-tarefa">Dapi</td>
+						<td class="calendario-depto">
+							<i class="fa fa-table" aria-hidden="true"></i>
+						</td>
+					</tr>
+					<tr>
+						<td class="calendario-data">09
+							<br>OUT</td>
+						<td class="calendario-tarefa">Dapi</td>
+						<td class="calendario-depto">
+							<i class="fa fa-table" aria-hidden="true"></i>
+						</td>
+					</tr>
+				</tbody>
 				<tfoot class="calendario-footer">
 
 				</tfoot>
