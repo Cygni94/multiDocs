@@ -6,9 +6,16 @@ for (var index = 0; index < aTabs.length; index++) {
     });
 };
 
-function hideTabs() {
-    let tabs = document.querySelectorAll('.tab');
-    for (var i = 0; i < tabs.length; i++) {
-        tabs[i].style.display = 'none';
+function multiTabs(event, tabName) {
+    //hides the "Inicio" tab when other menu item is clicked
+    document.querySelector('.main').classList.add("hidden");
+    
+    //hides all the other tabs
+    let otherTabs =  document.querySelectorAll('.tab');
+    for (var i = 0; i < otherTabs.length; i++) {
+        otherTabs[i].classList.add("hidden");
     };
+
+    //shows the selected tab
+    document.getElementById(tabName).classList.remove("hidden");
 };

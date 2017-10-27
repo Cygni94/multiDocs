@@ -10,9 +10,9 @@
 
 </head>
 
-<body onload="hideTabs()" class="wrapper">
+<body class="wrapper">
 	<header class="header">
-		<div class="header-title">multiDocs</div>
+		<div class="header-title"><a href="index.html">multiDocs</a></div>
 		<div class="userInfo">
 			<div class="userInfo-user">
 				<a href="">Cristiano</a>
@@ -25,7 +25,7 @@
 
 		<div class="header-menu">
 			<btn onclick="multiTabs(event, 'checklists')" class="header-menuItem">
-				<a id="myAnchor" href="">Checklists</a>
+				<a href="">Checklists</a>
 			</btn>
 			<btn onclick="multiTabs(event, 'documentos')" class="header-menuItem">
 				<a href="">Documentos</a>
@@ -58,8 +58,56 @@
 
 	</main>
 
-	<main id="documentos" class="tab">
+	<main id="checklists" class="tab hidden">
+		<span class="main-title">Checklists</span>
+		<ul class="quickAccess-list">
+			<li class="quickAccess-item">
+				<i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Novo Cliente</span>
+			</li>
+			<li class="quickAccess-item">
+				<i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Nova Tarefa</span>
+			</li>
+			<li class="quickAccess-item">
+				<i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Contrato de locação de imóvel residencial</span>
+			</li>
+			<li class="quickAccess-item">
+				<i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Checklist Depto. Pessoal 09/2017</span>
+			</li>
+		</ul>
+
+	</main>
+
+	
+	<main id="documentos" class="tab hidden">
 		<span class="main-title">Documentos</span>
+		<ul class="quickAccess-list">
+			<li class="quickAccess-item">
+				<i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Novo Cliente</span>
+			</li>
+			<li class="quickAccess-item">
+				<i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Nova Tarefa</span>
+			</li>
+			<li class="quickAccess-item">
+				<i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Contrato de locação de imóvel residencial</span>
+			</li>
+			<li class="quickAccess-item">
+				<i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+				<span class="quickAccess-title">Checklist Depto. Pessoal 09/2017</span>
+			</li>
+		</ul>
+
+	</main>
+
+	
+	<main id="rotinas" class="tab hidden">
+		<span class="main-title">Rotinas</span>
 		<ul class="quickAccess-list">
 			<li class="quickAccess-item">
 				<i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
