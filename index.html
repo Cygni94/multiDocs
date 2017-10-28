@@ -12,21 +12,23 @@
 
 <body class="wrapper">
 	<header class="header">
-		<div class="header-title"><a href="index.html">multiDocs</a></div>
+		<div class="header-title">
+			<a href="index.html">multiDocs</a>
+		</div>
 		<div class="userInfo">
 			<div class="userInfo-user">
 				<a href="">Cristiano</a>
 			</div>
 			<div class="userInfo-dropdown">
-				<button class="dropdown">
-				<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-			</button>
+				<button onclick="userDropdown()" class="dropdown">
+					<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+				</button>
 			</div>
-		</div>
+			<div id="dropdown-content" class="dropdown-content hidden">
+				<a href="">Editar cadastro</a><br>
+				<a href="">Sair</a>
+			</div>
 
-		<div class="dropdown-content">
-			<a href="">Editar cadastro</a>
-			<a href="">Sair</a>
 		</div>
 
 		<hr>
@@ -89,7 +91,7 @@
 
 	</main>
 
-	
+
 	<main id="documentos" class="tab hidden">
 		<span class="main-title">Documentos</span>
 		<ul class="quickAccess-list">
@@ -113,7 +115,7 @@
 
 	</main>
 
-	
+
 	<main id="rotinas" class="tab hidden">
 		<span class="main-title">Rotinas</span>
 		<ul class="quickAccess-list">

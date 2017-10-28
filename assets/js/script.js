@@ -17,5 +17,10 @@ function multiTabs(event, tabName) {
     };
 
     //shows the selected tab
-    document.getElementById(tabName).classList.remove("hidden");
+    document.querySelector('#'+tabName).classList.remove("hidden");
 };
+
+function userDropdown() {
+    //shows the dropdown-content
+    document.querySelector('#dropdown-content').classList.remove("hidden");
+}
