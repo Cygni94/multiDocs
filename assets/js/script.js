@@ -21,6 +21,21 @@ function multiTabs(event, tabName) {
 };
 
 function userDropdown() {
-    //shows the dropdown-content
-    document.querySelector('#dropdown-content').classList.remove("hidden");
+    //toggles the dropdown-content
+    document.querySelector('#dropdown-content').classList.toggle("hidden");
 }
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropdown')) {
+  
+      let dropdowns = document.getElementsByClassName("dropdown-content");
+      let i;
+      for (i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (!openDropdown.classList.contains('hidden')) {
+          openDropdown.classList.add('hidden');
+        }
+      }
+    }
+  }

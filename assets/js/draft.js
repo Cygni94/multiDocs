@@ -21,3 +21,9 @@ function multiTabs(event, tabName) {
     evt.currentTarget.className += " active";
 
 }
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.querySelector('#dropdown').classList.toggle("hidden");
+}
