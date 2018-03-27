@@ -9,33 +9,22 @@ for (var index = 0; index < aTabs.length; index++) {
 function multiTabs(event, tabName) {
     //hides the "Inicio" tab when other menu item is clicked
     document.querySelector('.main').classList.add("hidden");
-    
+
     //hides all the other tabs
-    let otherTabs =  document.querySelectorAll('.tab');
+    let otherTabs = document.querySelectorAll('.tab');
     for (var i = 0; i < otherTabs.length; i++) {
         otherTabs[i].classList.add("hidden");
     };
 
     //shows the selected tab
-    document.querySelector('#'+tabName).classList.remove("hidden");
-};
-
-function userDropdown() {
-    //toggles the dropdown-content
-    document.querySelector('#dropdown-content').classList.toggle("hidden");
+    document.getElementById(tabName).classList.remove("hidden");
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropdown')) {
-  
-      let dropdowns = document.getElementsByClassName("dropdown-content");
-      let i;
-      for (i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i];
-        if (!openDropdown.classList.contains('hidden')) {
-          openDropdown.classList.add('hidden');
-        }
-      }
-    }
-  }
+function showDropdown() {
+    let dropdownButton = document.querySelector('#dropdownButton');
+    dropdownButton.addEventListener("click", function () {
+        let dropdownContent = document.querySelector('#dropdownContent');
+        dropdownContent.classList.toggle("hidden");
+    });
+}
+showDropdown();
