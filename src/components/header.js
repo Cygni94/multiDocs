@@ -3,45 +3,20 @@ import "../styles/css/header.css";
 
 const Header = () => {
     return (
-        <header className="container">
-            <div className="row">
-                <div className="header-title">
-                    <a href="index.html">multiDocs</a>
+        <header className="container-fluid">
+            <div className="header row">
+                <div className="header__brand col-6 col-md-8">
+                    <h1>multiDocs</h1>
                 </div>
-                <div className="userInfo col-3">
-                    <div className="userInfo-user">
-                        <a href="">Cristiano</a>
-                    </div>
-                    <div className="userInfo-dropdown">
-                        <button id="dropdownButton" className="dropdown">
-                            <i
-                                className="fa fa-ellipsis-v"
-                                aria-hidden="true"
-                            />
-                        </button>
-                    </div>
-
-                    <div
-                        id="dropdownContent"
-                        className="dropdown-content hidden">
-                        <a href="">Editar cadastro</a>
-                        <a href="">Sair</a>
-                    </div>
+                <div className="header__userMenu col-6 col-md-4">
+                    <h6>Cristiano Coelho</h6>
                 </div>
             </div>
-
             <hr />
-
-            <div className="header-menu">
-                <button className="header-menuItem">
-                    <a href="">Checklists</a>
-                </button>
-                <button className="header-menuItem">
-                    <a href="">Documentos</a>
-                </button>
-                <button className="header-menuItem">
-                    <a href="">Rotinas</a>
-                </button>
+            <div className="submenu row">
+                <div className="submenu__item">Checklists</div>
+                <div className="submenu__item">Documentos</div>
+                <div className="submenu__item">Rotinas</div>
             </div>
         </header>
     );

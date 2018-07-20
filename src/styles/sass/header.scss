@@ -1,87 +1,62 @@
-a {
-    color: black;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css?family=Philosopher");
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 0px) {
+    h1 {
+        font-size: 2rem;
+        font-family: "Philosopher", sans-serif;
+    }
+    h6 {
+        font-size: 0.8rem;
+    }
+    header {
+        margin: 1rem 0.5rem;
+    }
+    .header__brand {
+        text-align: left;
+    }
+    .header__userMenu {
+        text-align: right;
+    }
 }
 
-a:hover {
-    text-decoration: underline;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
 }
 
-a:active {
-    color: grey;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        font-family: "Philosopher", sans-serif;
+    }
+    h6 {
+        font-size: 1.2rem;
+    }
+    header {
+        margin: 3rem 1.5rem;
+    }
+    .header__brand {
+        padding-left: 3rem;
+    }
+    .header__userMenu {
+        padding-right: 3rem;
+    }
+    .submenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-right: 3rem;
+    }
+    .submenu__item {
+        margin: 0 0.75rem;
+        font-size: 2rem;
+    }
 }
 
-input {
-    display: none;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
 }
 
-.hidden {
-    display: none;
-}
-
-.separator {
-    height: 1px;
-    border: 0;
-    border-top: 1px solid black;
-    margin: 0 0;
-    padding-left: 0;
-}
-
-.wrapper {
-    background-color: #fff;
-    color: #444;
-}
-
-.header-title {
-    padding-top: 2rem;
-    padding-left: 3rem;
-    font-size: 3rem;
-    font-family: "Philosopher", sans-serif;
-    height: 3rem;
-}
-
-.userInfo {
-    margin: auto;
-    padding: 0.5rem;
-    border: 1px solid black;
-    border-radius: 0.3rem;
-    position: relative;
-}
-
-.userInfo-user {
-    display: inline;
-}
-
-.userInfo-dropdown {
-    padding: 0 0.3rem 0 0.5rem;
-    display: inline;
-}
-
-.dropdown-content {
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    padding: 0.2rem 1rem 1rem 1rem;
-}
-
-hr {
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 0 0;
-    margin-left: 2rem;
-    margin-right: 4rem;
-    padding-left: 0;
-    z-index: 1;
-}
-
-.header-menu {
-    height: 2rem;
-    margin-right: 1rem;
-}
-
-.header-menuItem {
-    font-size: 2rem;
-    font-family: "Work Sans", sans-serif;
-    padding-right: 1rem;
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }
